@@ -35,6 +35,7 @@ function create_wordpress_database_user_and_tables {
 }
 
 function setup_wordpress_configuration {
+        apt-get install ed
         #$1 - MySQL user
         #$2 - MySQL password
         #$3 - Wordpress Database name
