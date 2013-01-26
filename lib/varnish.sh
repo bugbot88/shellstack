@@ -5,6 +5,7 @@
 ###########################################################
 
 function install_varnish {
+  echo "127.0.0.1 localhost" >> /etc/hosts
   log "Installing varnish..."
   aptitude install -y varnish
   echo "apc.shm_size=100M" >> /etc/php5/fpm/conf.d/apc.ini
